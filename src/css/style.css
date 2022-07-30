@@ -1,0 +1,1056 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+html {
+    font-family: 'Circular Std';
+}
+
+.welcome {
+    max-width: 100%;
+    min-height: 1046px;
+    background: url('../img/bg/header_background.png') center center/cover no-repeat;
+    position: relative;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.navbar ul {
+    width: 570px;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 75px;
+    color: #FFFFFF;
+}
+
+.nav-link:hover {
+    color: #f58c8c;
+}
+
+nav span {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.welcome .btn {
+    width: 179px;
+    height: 60px;
+    background: #FF3232;
+    cursor: pointer;
+    border-style: none;
+    position: relative;
+    border-radius: 5px;
+    -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 70%, 80% 100%, 0 100%, 0 30%);
+    clip-path: polygon(16% 0, 100% 0%, 100% 70%, 84% 100%, 0 100%, 0 30%);
+    transition: .5s all;
+}
+
+.welcome .btn:hover {
+    opacity: .8;
+}
+
+.welcome .btn:hover span {
+    color: #facbcb;
+}
+
+.welcome .welcome_title {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 75px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #FFF4F2;
+    margin-top: 100px;
+}
+
+.left h1 {
+    font-family: 'Rhinos rocks';
+    font-weight: 500;
+    font-size: 227px;
+    line-height: 179px;    
+    letter-spacing: 14px;
+    text-align: left;
+    text-transform: lowercase;
+    color: #FF3232;
+    margin-top: 15px;
+}
+
+.left h2 {
+    font-family: 'Dry Brush';
+    font-weight: 400;
+    font-size: 89px;
+    line-height: 75px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.welcome .welcome_text {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-top: 27px;
+}
+
+.welcome .left .welcome_btn {
+    width: 161.99px;
+    height: 60px;
+    background: #FF3232;
+    cursor: pointer;
+    border-style: none;
+    margin-top: 35px;
+    position: relative;
+    border-radius: 5px;    
+}
+
+.welcome .welcome_btn {
+    -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 70%, 80% 100%, 0 100%, 0 30%);
+    clip-path: polygon(16% 0, 100% 0%, 100% 70%, 84% 100%, 0 100%, 0 30%);
+}
+
+.welcome .left span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.welcome .welcome_btn img {
+    margin-left: 15px;
+}
+
+.welcome .main_character {
+    position: absolute;
+    top: 130px;
+    left: 520px;
+    max-width: 100%;
+    height: auto;    
+    z-index: 0;
+}
+
+.welcome .left::after {
+    content: '';
+    min-width: 945px;
+    width: 100%;
+    height: 951px;
+    background: url(../img/main_character.png) right no-repeat;
+    position: absolute;
+    right: -174px;
+    top: 132px;
+
+}
+
+/* ****************************STORY*************************** */
+
+.story {
+    min-height: 1038px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.story::before {
+    content: "";
+    display: block;
+    height: 326px;
+    transform: translateY(324px);
+    background: url(../img/bg/header_bottom.png) center top/cover no-repeat;
+    position: absolute;
+    top: -563px;
+    left: 0;
+    right: 0;
+}
+
+.story .story_character {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 200px;
+    left: -300px;
+}
+
+.story .story_title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 75px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #FF3232;
+    position: absolute;
+    left: 536px;
+}
+
+.story .story_about_us {
+    font-family: 'Rhinos rocks';
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 75px;
+    color: #1D2A3E;    
+    margin-top: 10px;
+    position: absolute;
+    top: 80px;
+    left: 536px;
+}
+
+.story span {
+    color: #FF3232;
+}
+
+.story .story_text {
+    width: 684px;
+    margin-top: 40px;
+    position: absolute;
+    top: 180px;
+    left: 536px;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+    color: #787D84;
+}
+
+/* **************************NFTNOMICS*************************** */
+
+.nftnomics {
+    min-height: 1303px;
+    background: url('../img/bg/nftnomics_background.png') center center/cover no-repeat;
+    margin-top: -175px;
+    margin-bottom: -190px;
+    position: relative;
+    z-index: 4;
+}
+
+.nftnomics .nftnomics_title {
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 75px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 250px;
+}
+
+.nftnomics_emphasis_white {
+    display: block;
+    margin: 0 auto;
+}
+
+.nftnomics .container {
+    width: 1100px;
+}
+
+.nftnomics .card {
+    width: 308px;
+    height: 456px;
+    background: linear-gradient(180deg, rgba(239, 203, 203, 0) 48.96%, #FFFFFF 97.4%);
+    border-radius: 59px;
+    border: none;
+    transition: 550ms all;
+    margin: 0 auto;
+}
+
+.nftnomics .card:hover {
+    background: linear-gradient(180deg, rgba(255, 50, 50, 0) 48.96%, #FF3232 97.4%);
+    filter: drop-shadow(0px 4px 44px rgba(231, 49, 51, 0.37));
+    transform: scale(1.1);
+    transition: 550ms all;
+}
+
+.nftnomics .card:hover .card_footer span {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 58px;
+
+    text-align: center;
+    transition: 550ms all;
+    color: #FFFFFF;
+    background-image: linear-gradient(180deg, #ffc3c3, #ff5353);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.circle img {
+    position: absolute;
+    left: -22px;
+    top: 52px;
+}
+
+.black_circle {
+    position: absolute;
+    width: 202px;
+    height: 202px;
+    left: 55px;
+    top: 125px;
+    background: #1C293D;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nftnomics .black_circle span {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 58px;
+    color: #FCFDFF;
+}
+
+.card_footer {
+    text-align: center;
+}
+
+.nftnomics .card_footer span {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 53px;
+
+    color: #1C293D;
+}
+
+.nftnomics::after {
+    content: '';
+    background: url(../img/nftnomics_character.png) right no-repeat;
+    width: 100%;
+    height: 818px;
+    position: absolute;
+    top: 335px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* *************************SALES STAGES*************************** */
+
+.sales_stages {
+    min-height: 800px;
+    background-color: #142034;
+    position: relative;
+    z-index: 4;
+    
+}
+
+.sales_stages::before {
+    content: "";
+    display: block;
+    height: 251px;
+    background: url(../img/bg/sales_stages_bg.png) center top/cover no-repeat;
+    position: absolute;
+    top: -251px;
+    right: 0;
+    left: 0;
+}
+
+.sales_stages_title {
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 75px;
+        
+    text-align: center;
+
+    color: #FFFFFF;
+    padding-top: 60px;
+}
+
+.sales_stages_title span {
+    color: #FF3232;
+}
+
+.sales_stages_emphasis_red {
+    display: block;
+    margin: 0 auto;
+}
+
+.sales_stages_character_left_1 {
+    position: absolute;
+    left: -300px;
+    top: -266px;
+    opacity: 0.6;
+    transition: all 1s ease;
+}
+
+.sales_stages::after {
+    content: '';
+    width: 100%;
+    height: 974px;
+    background: url(../img/sales_stages_character_left_1.png) center left no-repeat;
+    position: absolute;
+    top: -256px;
+    opacity: 0.6;
+}
+
+.sales_stages_character_left_2 {
+    position: absolute;
+    left: -300px;
+    top: 150px;
+    opacity: 0;    
+    transition: 1s;
+    mix-blend-mode: normal;
+}
+
+.sales_stages_card_wrapper {
+    position: relative;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding-top: 60px;
+    width: 100%;
+    gap: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sales_stages_card_wrapper > div {
+    z-index: 5;
+}
+
+.sales_stages_card_wrapper::after {
+    content: "";
+    display: block;
+    width: 1200px;
+    height: 440px;
+    border-radius: 22px;
+    box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.1);
+    background-color: #061121;
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+
+.sales_stages .sales_stages_card:nth-child(2) {
+    transform: translateY(70px);
+}
+
+.sales_stages .card {
+    width: 268px;
+    height: 388px;
+    margin: 0 auto;
+    background: #434b57;
+    box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.1);
+    border-radius: 22px;
+    border: 6px solid #2E3744;
+    transition: 0.2s all;
+    z-index: 5;
+}
+
+.sales_stages .card:hover {
+    background: #ffffff;
+}
+
+.sales_stages .card:hover h5 {
+    color: #061121;
+}
+
+.sales_stages .card:hover .number {
+    border: 5px solid rgb(255, 255, 255);
+    background-color: #ff3232;
+}
+
+.sales_stages .card:active {
+    background: #585f69;
+}
+
+.sales_stages .card:active .number {
+    background-color: #1bb988;
+}
+
+/* .sales_stages .active {
+    height: 56px;
+    width: 56px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+.sales_stages .picked {
+    height: 56px;
+    width: 56px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+} */
+
+.sales_stages .number {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.5625rem;
+    font-weight: 500;
+    height: 56px;
+    width: 56px;
+    background-color: #444c58;
+    border-radius: 50%;
+    border: 5px solid #2F3744;
+    transform: translate(-30%, -30%);
+}
+
+.sales_stages .card-img-top {
+    display: flex;
+    justify-content: center;
+    width: 136px;
+    margin: 52px auto 0;
+}
+
+.sales_stages_card_wrapper h5 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 58px;
+    text-align: center;
+    color: #B3B6B9;
+    opacity: 0.7;
+}
+
+.sales_stages_card_wrapper p {
+    font-weight: 450;
+    font-size: 23px;
+    line-height: 33px;
+    text-align: center;
+    color: #787D84;
+}
+
+.sales_stages_card:first-child::after {
+    content: '';
+    background: url(../img/top_dotted_line_gray_with_arrow.png) ;
+    position: absolute;
+    left: 20%;
+    top: 60%;
+    width: 283px;
+    height: 80px;
+}
+
+.sales_stages_card:nth-child(2)::after {
+    content: '';
+    background: url(../img/bottom_dotted_line_gray_with_arrow.png) ;
+    position: absolute;
+    left: 60%;
+    top: 35%;
+    width: 283px;
+    height: 100px;
+}
+
+/* **********************ROADMAP********************** */
+
+.roadmap {
+    min-height: 1747px;
+    padding: 200px 0px;
+    background: linear-gradient(180deg, #142034 36.72%,#702b40 63.92%,#AE2C42 92.68%);
+    position: relative;
+}
+
+.roadmap .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.roadmap_title {
+    font-family: 'Rhinos rocks';
+    font-weight: 500;
+    font-size: 105px;
+    line-height: 75px;
+    text-align: center;
+    color: #FEFEFF;
+}
+
+.roadmap_title::after {
+    content: "";
+    display: block;
+    width: 242px;
+    height: 34px;
+    background: url(../img/nftnomics_emphasis_white.png) center center / contain no-repeat;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.roadmap_title span {
+    color: #FF3232;
+}
+
+.roadmap_descr {
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #ABB0B8;
+    margin-top: 30px;
+}
+
+.roadmap #startpoint {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid #C4C4C4;
+    border-radius: 50%;
+    background: #C52D43;
+    z-index: 2;
+}
+
+.roadmap #endpoint {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid #C4C4C4;
+    border-radius: 50%;
+    background: #C52D43;
+}
+
+.timeline {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 100px auto 80px auto;
+    padding: 150px 0px 100px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline ul li {
+    background-color: #FFFFFF;
+    padding: 40px 30px;
+    border-radius: 28px;
+    margin-bottom: 85px;
+    color: #1D2A3E;
+    transition: .5s all;
+}
+
+.timeline ul li:hover {
+    background: #C22F2F;
+    color: #fff;
+}
+
+.timeline ul li:hover .connector {
+    background: #FFF;
+}
+
+.timeline ul li:hover .connector::before {
+    background: #fff;    
+}
+
+.timeline ul li:hover .round {
+    border: 8px solid #C52D43;
+}
+
+.timeline ul li:hover .round-lg {
+    background: #C52D43;
+    opacity: 0.5;
+}
+
+.timeline ul li:last-child {
+    margin-bottom: 0;
+}
+
+.connector {
+    width: 52px;
+    height: 4px;
+    position: absolute;
+    background-color: #6F7988;
+    z-index: 2;
+}
+
+.timeline ul li:nth-child(odd) .connector {
+    right: -10px;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.timeline ul li:nth-child(even) .connector{
+    left: -10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.connector::before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #6F7988;
+    position: absolute;    
+}
+
+.timeline ul li:nth-child(odd) .connector::before {
+    left: 0;
+    top: -50%;
+}
+
+.timeline ul li:nth-child(even) .connector::before {
+    right: 0;
+    top: -50%;
+}
+
+.round {
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 26px;
+    color: #1D2A3E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 8px solid #6F7988;
+    position: absolute;    
+    z-index: 2;
+}
+
+.timeline ul li:nth-child(odd) .round {
+    right: -93px;
+    top: calc(50% - 32px);
+}
+
+.timeline ul li:nth-child(even) .round {
+    left: -95px;
+    top: calc(50% - 32px);
+}
+
+.round-lg {
+    width: 83px;
+    height: 83px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.timeline ul li:nth-child(odd) .round-lg {
+    right: -101px;
+    top: calc(50% - 40px);
+}
+
+.timeline ul li:nth-child(even) .round-lg {
+    left: -103px;
+    top: calc(50% - 40px);
+}
+
+.timeline-content p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .timeline::before {
+        content: '';
+        position: absolute;
+        background-color: #C4C4C4;
+        width: 14px;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+    .timeline ul li {
+        width: 45%;
+        position: relative;
+    }
+
+    .timeline ul li:nth-child(odd) {
+        left: 0;
+    }
+
+    .timeline ul li:nth-child(even) {
+        left: calc(50% + 60px);
+    }
+
+    .timeline ul li:nth-child(2n+1):after {
+        content: '';
+        width: 10px;
+        height: 0;
+        background-color: #C52D43;
+        position: absolute;
+        bottom: 50%;
+        right: -65px;
+        z-index: 0;
+        transition: 0.5s all;
+        transition-timing-function: linear
+    }    
+
+    .timeline ul li:nth-child(2n+1):hover::after {
+        height: calc(100% + 25%);
+    }
+
+    .timeline ul li:first-child:hover::after {
+        height: 100%;
+    }
+    
+    .timeline ul li:nth-child(2n):after {
+        content: '';
+        width: 10px;
+        height: 0;
+        background-color: #C52D43;
+        position: absolute;
+        bottom: 50%;
+        left: -65px;
+        z-index: 0;
+        transition: 0.5s all;
+        transition-timing-function: linear
+    }
+
+    .timeline ul li:nth-child(2n):hover::after {
+        height: calc(100% + 25%);
+    }
+
+    .timeline ul li:last-child:hover::after {
+        height: calc(100% + 50%);
+    }
+}
+
+.roadmap .skull_lowest_image {
+    display: block;
+    margin: 0 auto;
+}
+
+.roadmap::before {
+    content: "";
+    display: block;
+    background: url(../img/roadmap_character_right_1.png) right center/contain no-repeat;
+    position: absolute;
+    top: 5%;
+    right: 0px;
+    height: 700px;
+    width: 100%;
+    mix-blend-mode: luminosity;
+    opacity: 0.06;
+}
+
+.roadmap::after {
+    content: "";
+    display: block;
+    background: url(../img/lowest_character.png) left center/contain no-repeat;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 780px;
+    width: 100%;
+}
+
+/* ****************FOOTER**************** */
+
+.footer {
+    height: 155px;
+    padding: 35px 0px;
+    background-color: black;
+}
+
+.footer .container {
+    min-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .frame {
+    width: 172px;
+    height: 85px;
+}
+
+.footer p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    gap: 17px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #FE5642;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.2s ease 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer li:hover {
+    background-color: #FE5642;
+}
+
+.footer li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ********************MODAL********************* */
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+    overflow-y: auto;
+    background-color: rgba(6, 17, 33, 0.91);;
+}
+
+#modal {
+    display: none;
+}
+
+.modal {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 418px;
+    width: 100%;
+    height: 477px;
+    background-color: #11151B;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    box-shadow: 0px 4px 250px rgba(0, 0, 0, 0.55);
+    border-radius: 15px;
+    padding: 36px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_close {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    top: 30px;
+    right: 24px;
+    font-size: 31px;
+    line-height: 23px;
+    color: #272729;
+    background: #3F3F3F;
+    border: 4px solid #2A2A2C;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.modal_close:hover {
+    background: #fff;
+}
+
+.modal_subtitle {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.modal_subtitle span {
+    color: #EA2A46;
+}
+
+.overlay .btn {
+    height: 73px;
+    width: 100%;
+    background-color: #1c1c22;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.125rem;
+    padding: 0px 37px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: none;
+}
+
+.overlay .btn:hover {
+    opacity: .8;
+}
+
+.overlay .btn img {
+    margin-right: 30px;
+}
+
+.feed-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    transition: all .2s ease;
+}
+
+.feed-form .button_submit {
+    background-color: #ea2a46;
+    font-size: 1.1875rem;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.feed-form a {
+    color: #FFFFFF;
+    opacity: 0.4;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: Rhinos rocks;
+    src: url(../fonts/rhinos_rocks.ttf);
+}
+
+@font-face {
+    font-family: Dry Brush;
+    src: url(../fonts/dry_brush.ttf);
+}
+
+@font-face {
+    font-family: Circular Std;
+    src: url(../fonts/circular-std-medium-500.ttf);
+}
