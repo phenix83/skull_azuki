@@ -1,3 +1,24 @@
+@font-face {
+    font-family: Rhinos rocks;
+    src: url(../fonts/rhinos_rocks.ttf);
+}
+
+@font-face {
+    font-family: Dry Brush;
+    src: url(../fonts/dry_brush.ttf);
+}
+
+@font-face {
+    font-family: Circular Std;
+    src: url(../fonts/circular-std-medium-500.ttf);
+}
+
+/* @media (max-width: 992px)
+
+@media (max-width: 768px)
+
+@media (max-width: 576px) */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -231,13 +252,17 @@ nav span {
     z-index: 4;
 }
 
+.nftnomics .container {
+    padding-top: 250px;
+}
+
 .nftnomics .nftnomics_title {
     font-weight: 900;
     font-size: 65px;
     line-height: 75px;
     text-align: center;
     color: #FFFFFF;
-    padding-top: 250px;
+    /* padding-top: 250px; */
 }
 
 .nftnomics_emphasis_white {
@@ -276,6 +301,7 @@ nav span {
     color: #FFFFFF;
     background-image: linear-gradient(180deg, #ffc3c3, #ff5353);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -369,14 +395,6 @@ nav span {
     margin: 0 auto;
 }
 
-.sales_stages_character_left_1 {
-    position: absolute;
-    left: -300px;
-    top: -266px;
-    opacity: 0.6;
-    transition: all 1s ease;
-}
-
 .sales_stages::after {
     content: '';
     width: 100%;
@@ -387,29 +405,15 @@ nav span {
     opacity: 0.6;
 }
 
-.sales_stages_character_left_2 {
-    position: absolute;
-    left: -300px;
-    top: 150px;
-    opacity: 0;    
-    transition: 1s;
-    mix-blend-mode: normal;
-}
-
 .sales_stages_card_wrapper {
     position: relative;
-    max-width: 1060px;
+    max-width: 1140px;
     margin: 0 auto;
     padding-top: 60px;
     width: 100%;
-    gap: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.sales_stages_card_wrapper > div {
-    z-index: 5;
 }
 
 .sales_stages_card_wrapper::after {
@@ -427,11 +431,6 @@ nav span {
     z-index: 1;
 }
 
-
-.sales_stages .sales_stages_card:nth-child(2) {
-    transform: translateY(70px);
-}
-
 .sales_stages .card {
     width: 268px;
     height: 388px;
@@ -440,8 +439,14 @@ nav span {
     box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.1);
     border-radius: 22px;
     border: 6px solid #2E3744;
+    cursor: pointer;
+    position: relative;
     transition: 0.2s all;
     z-index: 5;
+}
+
+.sales_stages .card:nth-child(2) {
+    transform: translateY(70px);
 }
 
 .sales_stages .card:hover {
@@ -457,31 +462,13 @@ nav span {
     background-color: #ff3232;
 }
 
-.sales_stages .card:active {
-    background: #585f69;
+.sales_stages .active {
+    background: #585f69;    
 }
 
-.sales_stages .card:active .number {
-    background-color: #1bb988;
+.sales_stages .active h5 {
+    color: #061121;
 }
-
-/* .sales_stages .active {
-    height: 56px;
-    width: 56px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-}
-
-.sales_stages .picked {
-    height: 56px;
-    width: 56px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-} */
 
 .sales_stages .number {
     position: absolute;
@@ -502,6 +489,12 @@ nav span {
     border-radius: 50%;
     border: 5px solid #2F3744;
     transform: translate(-30%, -30%);
+}
+
+.sales_stages .number_active {
+    background-color: #1bb988;
+    background: url('../icons/v_1.png') center center no-repeat;
+    border: 5px solid #ffffff;
 }
 
 .sales_stages .card-img-top {
@@ -528,24 +521,44 @@ nav span {
     color: #787D84;
 }
 
-.sales_stages_card:first-child::after {
-    content: '';
-    background: url(../img/top_dotted_line_gray_with_arrow.png) ;
+.arrow_top {
+    background: url('../img/top_dotted_line_gray_with_arrow.png') center center/cover no-repeat;
     position: absolute;
-    left: 20%;
-    top: 60%;
+    left: 22%;
+    top: 62%;
     width: 283px;
-    height: 80px;
+    height: 95px;
+    z-index: 2;
 }
 
-.sales_stages_card:nth-child(2)::after {
-    content: '';
-    background: url(../img/bottom_dotted_line_gray_with_arrow.png) ;
+.arrow_bottom {
+    background: url('../img/bottom_dotted_line_gray_with_arrow.png') center center/cover no-repeat;
     position: absolute;
-    left: 60%;
-    top: 35%;
+    left: 53.5%;
+    top: 57%;
     width: 283px;
-    height: 100px;
+    height: 95px;
+    z-index: 2;
+}
+
+.sales_stages_card_wrapper .white_top {
+    background: url('../img/top_dotted_line_white_with_arrow.png') center center/cover no-repeat;
+    position: absolute;
+    left: 22%;
+    top: 62%;
+    width: 283px;
+    height: 95px;
+    z-index: 2;
+}
+
+.sales_stages_card_wrapper .white_bottom {
+    background: url('../img/bottom_dotted_line_white_with_arrow.png') center center/cover no-repeat;
+    position: absolute;
+    left: 53.5%;
+    top: 57%;
+    width: 283px;
+    height: 95px;
+    z-index: 2;
 }
 
 /* **********************ROADMAP********************** */
@@ -1032,25 +1045,3 @@ nav span {
     line-height: 32px;
 }
 
-
-
-
-
-
-
-
-
-@font-face {
-    font-family: Rhinos rocks;
-    src: url(../fonts/rhinos_rocks.ttf);
-}
-
-@font-face {
-    font-family: Dry Brush;
-    src: url(../fonts/dry_brush.ttf);
-}
-
-@font-face {
-    font-family: Circular Std;
-    src: url(../fonts/circular-std-medium-500.ttf);
-}
