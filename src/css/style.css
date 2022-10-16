@@ -42,8 +42,31 @@ html {
     position: relative;
 }
 
-.navbar ul {
-    width: 570px;
+.navbar {
+    max-width: 1300px;
+    margin: auto;
+}
+
+a .navbar-brand {
+    display: block;
+    max-width: 232px;
+}
+
+.logo_img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-collapse {
+    /* flex-grow: 0; */
+    max-width: 570px;
+}
+
+.welcome ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nav-link {
@@ -65,7 +88,7 @@ nav span {
 }
 
 .welcome .btn {
-    width: 179px;
+    max-width: 179px;
     height: 60px;
     background: #FF3232;
     cursor: pointer;
@@ -85,46 +108,53 @@ nav span {
     color: #facbcb;
 }
 
-.welcome .welcome_title {
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 75px;
+.welcome .container {
+    max-width: 1600px;
+}
+
+.welcome .welcome_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome .text_box {
+    margin-left: 10%;
+}
+
+.welcome .text_box .welcome_title {
+    font-weight: 700;
+    font-size: 1.1vw;
     letter-spacing: 5px;
     text-transform: uppercase;
     color: #FFF4F2;
     margin-top: 100px;
 }
 
-.left h1 {
+.text_box h1 {
     font-family: 'Rhinos rocks';
     font-weight: 500;
-    font-size: 227px;
-    line-height: 179px;    
+    font-size: 12vw;
     letter-spacing: 14px;
-    text-align: left;
     text-transform: lowercase;
     color: #FF3232;
-    margin-top: 15px;
+    margin-bottom: -40px;
 }
 
-.left h2 {
+.text_box h2 {
     font-family: 'Dry Brush';
     font-weight: 400;
-    font-size: 89px;
-    line-height: 75px;
+    font-size: 5vw;
     color: #FFFFFF;
-    margin-top: 10px;
 }
 
 .welcome .welcome_text {
     font-weight: 200;
     font-size: 16px;
-    line-height: 28px;
     color: #FFFFFF;
     margin-top: 27px;
 }
 
-.welcome .left .welcome_btn {
+.welcome .text_box .welcome_btn {
     width: 161.99px;
     height: 60px;
     background: #FF3232;
@@ -140,7 +170,7 @@ nav span {
     clip-path: polygon(16% 0, 100% 0%, 100% 70%, 84% 100%, 0 100%, 0 30%);
 }
 
-.welcome .left span {
+.welcome .text_box span {
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
@@ -151,25 +181,18 @@ nav span {
     margin-left: 15px;
 }
 
-.welcome .main_character {
-    position: absolute;
-    top: 130px;
-    left: 520px;
+.welcome_img_box {
+    width: 51%;
+    align-self: flex-end;
+}
+
+.welcome .main_carachter {
+    /* position: absolute;
+    top: 140px;
+    right: -170px; */
     max-width: 100%;
     height: auto;    
     z-index: 0;
-}
-
-.welcome .left::after {
-    content: '';
-    min-width: 945px;
-    width: 100%;
-    height: 951px;
-    background: url(../img/main_character.png) right no-repeat;
-    position: absolute;
-    right: -174px;
-    top: 132px;
-
 }
 
 /* ****************************STORY*************************** */
@@ -181,24 +204,42 @@ nav span {
     z-index: 2;
 }
 
+.story .container {
+    max-width: initial;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .story::before {
     content: "";
     display: block;
-    height: 326px;
-    transform: translateY(324px);
-    background: url(../img/bg/header_bottom.png) center top/cover no-repeat;
+    max-width: 100%;
+    max-height: 326px;
+    height: 100%;
+    background: url(../img/bg/story_top.png) center top/cover no-repeat;
     position: absolute;
-    top: -563px;
+    top: -260px;
     left: 0;
     right: 0;
+}
+
+.story .story_img_box {
+    margin-bottom: -6%;
+    align-self: flex-end;
 }
 
 .story .story_character {
     max-width: 100%;
     height: auto;
-    position: absolute;
-    top: 200px;
-    left: -300px;
+}
+
+.story .story_wrapper {
+    max-width: 684px;
+    display: block;
+    margin: 0 auto;
+    margin-left: 50px;
 }
 
 .story .story_title {
@@ -208,8 +249,8 @@ nav span {
     letter-spacing: 8px;
     text-transform: uppercase;
     color: #FF3232;
-    position: absolute;
-    left: 536px;
+    /* position: absolute;
+    left: 536px; */
 }
 
 .story .story_about_us {
@@ -219,35 +260,35 @@ nav span {
     line-height: 75px;
     color: #1D2A3E;    
     margin-top: 10px;
-    position: absolute;
+    /* position: absolute;
     top: 80px;
-    left: 536px;
+    left: 536px; */
 }
 
-.story span {
+.story .story_about_us span {
     color: #FF3232;
 }
 
 .story .story_text {
-    width: 684px;
+    /* max-width: 684px; */
     margin-top: 40px;
-    position: absolute;
+    /* position: absolute;
     top: 180px;
-    left: 536px;
+    left: 536px; */
     font-weight: 450;
     font-size: 16px;
     line-height: 26px;
-    text-align: justify;
+    text-align: left;
     color: #787D84;
 }
 
 /* **************************NFTNOMICS*************************** */
 
 .nftnomics {
-    min-height: 1303px;
+    min-height: 1260px;
     background: url('../img/bg/nftnomics_background.png') center center/cover no-repeat;
     margin-top: -175px;
-    margin-bottom: -190px;
+    margin-bottom: -154px;
     position: relative;
     z-index: 4;
 }
@@ -271,12 +312,12 @@ nav span {
 }
 
 .nftnomics .container {
-    width: 1100px;
+    max-width: 1100px;
 }
 
 .nftnomics .card {
-    width: 308px;
-    height: 456px;
+    max-width: 308px;
+    height: auto;
     background: linear-gradient(180deg, rgba(239, 203, 203, 0) 48.96%, #FFFFFF 97.4%);
     border-radius: 59px;
     border: none;
@@ -289,6 +330,11 @@ nav span {
     filter: drop-shadow(0px 4px 44px rgba(231, 49, 51, 0.37));
     transform: scale(1.1);
     transition: 550ms all;
+}
+
+.nftnomics .card:hover .circles {
+    background: url(../img/nftnomics_circle_red_black.png) center no-repeat;
+    background-size: contain;
 }
 
 .nftnomics .card:hover .card_footer span {
@@ -305,19 +351,22 @@ nav span {
     -webkit-text-fill-color: transparent;
 }
 
-.circle img {
-    position: absolute;
-    left: -22px;
-    top: 52px;
+.circles {
+    background: url(../img/nftnomics_circle_white_black.png) center no-repeat;
+    background-size: contain;
+    max-width: 276px;
+    height: 276px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
 }
 
 .black_circle {
-    position: absolute;
-    width: 202px;
+    max-width: 202px;
+    max-height: 202px;
+    width: 100%;
     height: 202px;
-    left: 55px;
-    top: 125px;
-    background: #1C293D;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -333,6 +382,7 @@ nav span {
 
 .card_footer {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .nftnomics .card_footer span {
@@ -343,15 +393,29 @@ nav span {
     color: #1C293D;
 }
 
-.nftnomics::after {
+/* .nftnomics::after {
     content: '';
     background: url(../img/nftnomics_character.png) right no-repeat;
     width: 100%;
-    height: 818px;
+    height: 65%;
     position: absolute;
-    top: 335px;
+    bottom: 11%;
+    right: -5%;
     z-index: -1;
     opacity: 0.6;
+} */
+
+.nftnomics_img_box {
+    max-width: 31%;
+    width: 100%;
+    max-height: 73%;
+    height: 100%;
+    background: url(../img/nftnomics_character.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    bottom: -2%;
+    z-index: -1;
 }
 
 /* *************************SALES STAGES*************************** */
@@ -360,8 +424,11 @@ nav span {
     min-height: 800px;
     background-color: #142034;
     position: relative;
-    z-index: 4;
-    
+    z-index: 4;    
+}
+
+.sales_stages .container {
+    max-width: 1200px;
 }
 
 .sales_stages::before {
@@ -370,7 +437,7 @@ nav span {
     height: 251px;
     background: url(../img/bg/sales_stages_bg.png) center top/cover no-repeat;
     position: absolute;
-    top: -251px;
+    top: -250px;
     right: 0;
     left: 0;
 }
@@ -398,10 +465,10 @@ nav span {
 .sales_stages::after {
     content: '';
     width: 100%;
-    height: 974px;
-    background: url(../img/sales_stages_character_left_1.png) center left no-repeat;
+    height: 100%;
+    background: url(../img/sales_stages_character_left.png) left center / contain no-repeat;
     position: absolute;
-    top: -256px;
+    top: -175px;
     opacity: 0.6;
 }
 
@@ -414,12 +481,13 @@ nav span {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10%;
 }
 
 .sales_stages_card_wrapper::after {
     content: "";
     display: block;
-    width: 1200px;
+    width: 100%;
     height: 440px;
     border-radius: 22px;
     box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.1);
@@ -432,9 +500,13 @@ nav span {
 }
 
 .sales_stages .card {
-    width: 268px;
-    height: 388px;
-    margin: 0 auto;
+    max-width: 268px;
+    width: 33%;
+    /* height: 388px; */
+    max-height: 388px;
+    /* height: 100%; */
+    /* min-height: 388px; */
+    padding: 25px 20px 56px;
     background: #434b57;
     box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.1);
     border-radius: 22px;
@@ -443,6 +515,10 @@ nav span {
     position: relative;
     transition: 0.2s all;
     z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sales_stages .card:nth-child(2) {
@@ -497,17 +573,22 @@ nav span {
     border: 5px solid #ffffff;
 }
 
+.card_img_box {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
 .sales_stages .card-img-top {
-    display: flex;
-    justify-content: center;
-    width: 136px;
-    margin: 52px auto 0;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* width: 136px; */
+    
 }
 
 .sales_stages_card_wrapper h5 {
     font-weight: 500;
     font-size: 25px;
-    line-height: 58px;
+    /* line-height: 58px; */
     text-align: center;
     color: #B3B6B9;
     opacity: 0.7;
@@ -516,17 +597,39 @@ nav span {
 .sales_stages_card_wrapper p {
     font-weight: 450;
     font-size: 23px;
-    line-height: 33px;
+    /* line-height: 33px; */
     text-align: center;
     color: #787D84;
 }
 
-.arrow_top {
-    background: url('../img/top_dotted_line_gray_with_arrow.png') center center/cover no-repeat;
+.arrow_top_box {
     position: absolute;
     left: 22%;
     top: 62%;
+    max-width: 283px;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.arrow_top {
+    background: url('../img/top_dotted_line_gray_with_arrow.png') center center/cover no-repeat;
+    /* width: 100%; */
+    height: 95px;
+    /* position: absolute;
+    left: 22%;
+    top: 62%;
     width: 283px;
+    height: 95px;
+    z-index: 2; */
+}
+
+.arrow_bottom_box {
+    position: absolute;
+    left: 53.5%;
+    top: 57%;
+    max-width: 283px;
+    width: 100%;
     height: 95px;
     z-index: 2;
 }
@@ -534,8 +637,6 @@ nav span {
 .arrow_bottom {
     background: url('../img/bottom_dotted_line_gray_with_arrow.png') center center/cover no-repeat;
     position: absolute;
-    left: 53.5%;
-    top: 57%;
     width: 283px;
     height: 95px;
     z-index: 2;
@@ -544,7 +645,7 @@ nav span {
 .sales_stages_card_wrapper .white_top {
     background: url('../img/top_dotted_line_white_with_arrow.png') center center/cover no-repeat;
     position: absolute;
-    left: 22%;
+    /* left: 22%; */
     top: 62%;
     width: 283px;
     height: 95px;
@@ -554,8 +655,8 @@ nav span {
 .sales_stages_card_wrapper .white_bottom {
     background: url('../img/bottom_dotted_line_white_with_arrow.png') center center/cover no-repeat;
     position: absolute;
-    left: 53.5%;
-    top: 57%;
+    /* left: 53.5%;
+    top: 57%; */
     width: 283px;
     height: 95px;
     z-index: 2;
@@ -565,7 +666,7 @@ nav span {
 
 .roadmap {
     min-height: 1747px;
-    padding: 200px 0px;
+    padding: 160px 0px;
     background: linear-gradient(180deg, #142034 36.72%,#702b40 63.92%,#AE2C42 92.68%);
     position: relative;
 }
@@ -582,6 +683,7 @@ nav span {
     line-height: 75px;
     text-align: center;
     color: #FEFEFF;
+    padding-top: 50px;
 }
 
 .roadmap_title::after {
@@ -640,48 +742,70 @@ nav span {
     padding: 150px 0px 100px 0px;
     position: relative;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    background-color: #C4C4C4;
+    width: 14px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
 }
 
 .timeline ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .timeline ul li {
-    background-color: #FFFFFF;
-    padding: 40px 30px;
-    border-radius: 28px;
     margin-bottom: 85px;
     color: #1D2A3E;
     transition: .5s all;
-}
-
-.timeline ul li:hover {
-    background: #C22F2F;
-    color: #fff;
-}
-
-.timeline ul li:hover .connector {
-    background: #FFF;
-}
-
-.timeline ul li:hover .connector::before {
-    background: #fff;    
-}
-
-.timeline ul li:hover .round {
-    border: 8px solid #C52D43;
-}
-
-.timeline ul li:hover .round-lg {
-    background: #C52D43;
-    opacity: 0.5;
+    position: relative;
 }
 
 .timeline ul li:last-child {
     margin-bottom: 0;
 }
+
+.timeline ul li:nth-child(odd) {
+    padding-right: 120px;
+}
+
+.timeline ul li:nth-child(even) {
+    padding-left: 120px;
+}
+
+.round_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* .round_box:nth-child(odd) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+} */
+
+/* .round_box:nth-child(even) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+} */
 
 .connector {
     width: 52px;
@@ -691,34 +815,63 @@ nav span {
     z-index: 2;
 }
 
-.timeline ul li:nth-child(odd) .connector {
-    right: -10px;
-    top: 50%;
-    transform: translate(50%, -50%);
-}
-
-.timeline ul li:nth-child(even) .connector{
-    left: -10px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.connector::before {
+/* .connector::before {
     content: '';
     width: 9px;
     height: 9px;
     border-radius: 50%;
     background-color: #6F7988;
     position: absolute;    
+} */
+
+.connector_round {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #6F7988;
+    position: absolute;
+    top: -50%;
+}
+
+.timeline ul li:nth-child(odd) .connector_round {
+    left: -1px;
+}
+
+.timeline ul li:nth-child(even) .connector_round {
+    right: -1px;
+}
+
+.connector_hovered {
+    background-color: #fff;
+}
+
+.connector_round_hovered {
+    background: #fff;
+}
+
+/* .timeline ul li:hover .connector {
+    background-color: #FFF;
+}
+
+.timeline ul li:hover .connector::before {
+    background-color: #fff;
+} */
+
+.timeline ul li:nth-child(odd) .connector {
+    left: -75px;
+}
+
+.timeline ul li:nth-child(even) .connector{
+    right: -75px;
 }
 
 .timeline ul li:nth-child(odd) .connector::before {
-    left: 0;
+    left: -1px;
     top: -50%;
 }
 
 .timeline ul li:nth-child(even) .connector::before {
-    right: 0;
+    right: -1px;
     top: -50%;
 }
 
@@ -739,14 +892,12 @@ nav span {
     z-index: 2;
 }
 
-.timeline ul li:nth-child(odd) .round {
-    right: -93px;
-    top: calc(50% - 32px);
-}
+/* .timeline ul li:hover .round {
+    border: 8px solid #C52D43;
+} */
 
-.timeline ul li:nth-child(even) .round {
-    left: -95px;
-    top: calc(50% - 32px);
+.round_hovered {
+    border: 8px solid #C52D43;
 }
 
 .round-lg {
@@ -758,14 +909,76 @@ nav span {
     z-index: 1;
 }
 
-.timeline ul li:nth-child(odd) .round-lg {
-    right: -101px;
-    top: calc(50% - 40px);
+/* .timeline ul li:hover .round-lg {
+    background: #C52D43;
+    opacity: 0.5;
+} */
+
+.round-lg_hovered {
+    background: #C52D43;
+    opacity: 0.5;
 }
 
-.timeline ul li:nth-child(even) .round-lg {
-    left: -103px;
-    top: calc(50% - 40px);
+.timeline-content {
+    /* margin: 0px calc(50% + 64px) 0px 0px; */
+    width: 50%;
+    padding: 42px 27px;
+    border-radius: 28px;
+    background-color: #fff;
+    transition: .5s all;
+}
+
+.timeline-content:hover {
+    background: #C22F2F;
+    color: #fff;
+}
+
+.timeline ul li:nth-child(even) .timeline-content {
+    margin-left: 50%;
+}
+
+.timeline ul li:nth-child(2n+1) .timeline-content:after {
+    content: '';
+    width: 10px;
+    height: 0;
+    background-color: #C52D43;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    transition: 0.5s all;
+    transition-timing-function: linear
+}    
+
+.timeline ul li:nth-child(2n+1) .timeline-content:hover::after {
+    height: calc(100% + 25%);
+}
+
+.timeline ul li:first-child .timeline-content:hover::after {
+    height: 100%;
+}
+
+.timeline ul li:nth-child(2n) .timeline-content:after {
+    content: '';
+    width: 10px;
+    height: 0;
+    background-color: #C52D43;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    transition: 0.5s all;
+    transition-timing-function: linear
+}
+
+.timeline ul li:nth-child(2n) .timeline-content:hover::after {
+    height: calc(100% + 25%);
+}
+
+.timeline ul li:last-child .timeline-content:hover::after {
+    height: calc(100% + 50%);
 }
 
 .timeline-content p {
@@ -775,73 +988,21 @@ nav span {
     margin-bottom: 0;
 }
 
-@media only screen and (min-width: 768px) {
-    .timeline::before {
-        content: '';
-        position: absolute;
-        background-color: #C4C4C4;
-        width: 14px;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-    }
 
-    .timeline ul li {
-        width: 45%;
-        position: relative;
-    }
 
-    .timeline ul li:nth-child(odd) {
-        left: 0;
-    }
 
-    .timeline ul li:nth-child(even) {
-        left: calc(50% + 60px);
-    }
 
-    .timeline ul li:nth-child(2n+1):after {
-        content: '';
-        width: 10px;
-        height: 0;
-        background-color: #C52D43;
-        position: absolute;
-        bottom: 50%;
-        right: -65px;
-        z-index: 0;
-        transition: 0.5s all;
-        transition-timing-function: linear
-    }    
 
-    .timeline ul li:nth-child(2n+1):hover::after {
-        height: calc(100% + 25%);
-    }
 
-    .timeline ul li:first-child:hover::after {
-        height: 100%;
-    }
+
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
     
-    .timeline ul li:nth-child(2n):after {
-        content: '';
-        width: 10px;
-        height: 0;
-        background-color: #C52D43;
-        position: absolute;
-        bottom: 50%;
-        left: -65px;
-        z-index: 0;
-        transition: 0.5s all;
-        transition-timing-function: linear
-    }
-
-    .timeline ul li:nth-child(2n):hover::after {
-        height: calc(100% + 25%);
-    }
-
-    .timeline ul li:last-child:hover::after {
-        height: calc(100% + 50%);
-    }
 }
 
 .roadmap .skull_lowest_image {
@@ -849,18 +1010,34 @@ nav span {
     margin: 0 auto;
 }
 
-.roadmap::before {
+.roadmap_img_box_top {
+    max-width: 28%;
+    width: 100%;
+    max-height: 31%;
+    height: 100%;
+    background: url(../img/roadmap_character_right_1.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 3%;
+    mix-blend-mode: luminosity;
+    opacity: 0.06;
+}
+
+/* .roadmap::before {
     content: "";
     display: block;
     background: url(../img/roadmap_character_right_1.png) right center/contain no-repeat;
     position: absolute;
-    top: 5%;
+    top: 3%;
     right: 0px;
-    height: 700px;
+    height: 100%;
+    max-height: 31%;
     width: 100%;
+    max-width: 28%;
     mix-blend-mode: luminosity;
     opacity: 0.06;
-}
+} */
 
 .roadmap::after {
     content: "";
@@ -882,7 +1059,7 @@ nav span {
 }
 
 .footer .container {
-    min-width: 1200px;
+    max-width: 1300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1045,3 +1222,233 @@ nav span {
     line-height: 32px;
 }
 
+@media (max-width: 1492px) {
+    .nftnomics_img_box {
+        bottom: -11%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .nftnomics_img_box {
+        bottom: -15%;
+    }
+}
+
+@media (max-width: 1180px) {
+    .nftnomics_img_box {
+        bottom: -18%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    /* .welcome .main_carachter {
+        max-width: 50%;
+    } */
+
+    .navbar-brand {
+        /* height: 70px;
+        width: auto; */
+        max-width: 180px;
+    }
+
+    .welcome {
+        min-height: 930px;
+    }
+
+    .welcome .text_box .welcome_title {
+        font-size: 1.5vw;
+    }
+
+    .welcome .text_box {
+        margin-left: 5%;
+    }
+
+    .text_box h1 {
+        font-size: 14vw;
+    }
+
+    .text_box h2 {
+        font-size: 7vw;
+        margin-top: 38px;
+    }
+
+    .story .container {
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .story .story_img_box {
+        padding-top: 30px;
+        align-self: flex-start;
+        max-width: 50%;
+    }
+
+    .welcome_img_box {
+        width: 60%;
+    }
+
+    .nftnomics_img_box {
+        bottom: -21%;
+    }
+
+    .sales_stages .card {
+        padding: 20px 20px 37px;
+        /* max-width: 181px;
+        max-height: 261px; */
+    }
+
+    .sales_stages_card_wrapper h5 {
+        font-size: 18px;
+    }
+    
+    .sales_stages_card_wrapper p {
+        font-size: 15px;
+    }
+
+    .roadmap::after {
+        display: none;
+    }
+
+    .round_box {
+        top: 8%;
+    }
+}
+
+@media (max-width: 868px) {
+    .nftnomics_img_box {
+        bottom: -23%;
+    }
+
+    .card_img_box {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* .welcome {
+        min-height: 910px;
+    } */
+
+    .welcome .welcome_wrapper {
+        flex-direction: column;
+    }
+
+    .welcome .text_box {
+        text-align: center;
+        width: 100%;
+        margin-left: initial;
+    }
+
+    .welcome .text_box .welcome_title {
+        margin-top: 20px;
+    }
+
+    .text_box h1 {
+        /* font-size: 130px; */
+    }
+
+    .welcome_img_box {
+        width: 80%;
+        margin-top: 20px;
+        margin-left: 15%;
+    }
+
+    .story::before {
+        top: -100px;
+    }
+
+    .nftnomics {
+        margin-bottom: 0;
+        padding-bottom: 180px;
+    }
+
+    .nftnomics_img_box {
+        max-width: 358px;
+        width: 100%;
+        max-height: 338px;
+        height: 338px;
+        position: static;
+        background: url(../img/nftnomics_character_small.png) no-repeat;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+
+    .sales_stages_card_wrapper {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .sales_stages_card_wrapper::after {
+        display: none;
+    }
+
+    .sales_stages .card:nth-child(2) {
+        transform: translate(0);
+    }
+
+    .sales_stages .card {
+        margin-top: 70px;
+        width: 100%;
+        height: 388px;
+    }
+
+    .sales_stages .card h5, .sales_stages .card p {
+        font-size: 20px;
+    }
+
+    .sales_stages .card:hover {
+        background: #434b57;
+    }
+
+    .sales_stages .card:hover .number {
+        border: 5px solid #2F3744;
+        background-color: #444c58;
+    }
+
+    .card_img_box {
+        margin-bottom: 60px;
+    }
+
+    .arrow_top, .arrow_bottom {
+        display: none;
+    }
+
+    .sales_stages::after {
+        display: none;
+    }
+
+    .timeline ul li {
+        width: 100%;
+        margin-bottom: 120px;
+        align-self: center;  
+    }
+
+    .timeline ul li:nth-child(odd) {
+        padding-right: 0;
+    }
+
+    .timeline ul li:nth-child(even) {
+        padding-left: 0;
+    }
+
+    .round_box {
+        top: 0;
+    }
+
+    .connector {
+        display: none;
+    }
+
+    .timeline ul li:nth-child(even) .timeline-content {
+        margin-left: 0;
+    }
+
+    .timeline-content {
+        width: 100%;
+    }
+}
