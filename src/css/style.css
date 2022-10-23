@@ -31,7 +31,7 @@ html {
 
 .welcome {
     max-width: 100%;
-    min-height: 1046px;
+    min-height: 1050px;
     background: url('../img/bg/header_background.png') center center/cover no-repeat;
     position: relative;
 }
@@ -123,7 +123,8 @@ nav span {
 
 .welcome .text_box .welcome_title {
     font-weight: 700;
-    font-size: 1.1vw;
+    /* font-size: 1.1vw; */
+    font-size: 20px;
     letter-spacing: 5px;
     text-transform: uppercase;
     color: #FFF4F2;
@@ -133,7 +134,8 @@ nav span {
 .text_box h1 {
     font-family: 'Rhinos rocks';
     font-weight: 500;
-    font-size: 12vw;
+    /* font-size: 12vw; */
+    font-size: 227px;
     letter-spacing: 14px;
     text-transform: lowercase;
     color: #FF3232;
@@ -143,7 +145,8 @@ nav span {
 .text_box h2 {
     font-family: 'Dry Brush';
     font-weight: 400;
-    font-size: 5vw;
+    /* font-size: 5vw; */
+    font-size: 89px;
     color: #FFFFFF;
 }
 
@@ -216,9 +219,9 @@ nav span {
     content: "";
     display: block;
     max-width: 100%;
-    max-height: 326px;
+    max-height: 260px;
     height: 100%;
-    background: url(../img/bg/story_top.png) center top/cover no-repeat;
+    background: url(../img/bg/story_top1.png) center top/cover no-repeat;
     position: absolute;
     top: -260px;
     left: 0;
@@ -285,10 +288,10 @@ nav span {
 /* **************************NFTNOMICS*************************** */
 
 .nftnomics {
-    min-height: 1260px;
+    min-height: 1294px;
     background: url('../img/bg/nftnomics_background.png') center center/cover no-repeat;
     margin-top: -175px;
-    margin-bottom: -154px;
+    margin-bottom: -176px;
     position: relative;
     z-index: 4;
 }
@@ -408,13 +411,13 @@ nav span {
 .nftnomics_img_box {
     max-width: 31%;
     width: 100%;
-    max-height: 73%;
+    max-height: 59%;
     height: 100%;
     background: url(../img/nftnomics_character.png) no-repeat;
     background-size: contain;
     position: absolute;
     right: 0;
-    bottom: -2%;
+    bottom: 11%;
     z-index: -1;
 }
 
@@ -435,7 +438,8 @@ nav span {
     content: "";
     display: block;
     height: 251px;
-    background: url(../img/bg/sales_stages_bg.png) center top/cover no-repeat;
+    background: url(../img/bg/sales_stages_bg1.png) no-repeat;
+    background-position: 77% 50%;
     position: absolute;
     top: -250px;
     right: 0;
@@ -462,7 +466,17 @@ nav span {
     margin: 0 auto;
 }
 
-.sales_stages::after {
+.sales_stages_img_box {
+    max-width: 32%;
+    width: 100%;
+    height: 100%;
+    background: url(../img/sales_stages_character_left.png) left center / contain no-repeat;
+    position: absolute;
+    top: -200px;
+    opacity: 0.6;
+}
+
+/* .sales_stages::after {
     content: '';
     width: 100%;
     height: 100%;
@@ -470,7 +484,7 @@ nav span {
     position: absolute;
     top: -175px;
     opacity: 0.6;
-}
+} */
 
 .sales_stages_card_wrapper {
     position: relative;
@@ -481,7 +495,7 @@ nav span {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    /* gap: 10%; */
 }
 
 .sales_stages_card_wrapper::after {
@@ -501,12 +515,12 @@ nav span {
 
 .sales_stages .card {
     max-width: 268px;
-    width: 33%;
+    width: 24%;
     /* height: 388px; */
     max-height: 388px;
     /* height: 100%; */
     /* min-height: 388px; */
-    padding: 25px 20px 56px;
+    padding: 25px 16px 56px;
     background: #434b57;
     box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.1);
     border-radius: 22px;
@@ -521,7 +535,7 @@ nav span {
     align-items: center;
 }
 
-.sales_stages .card:nth-child(2) {
+.sales_stages .card:nth-child(3) {
     transform: translateY(70px);
 }
 
@@ -603,19 +617,21 @@ nav span {
 }
 
 .arrow_top_box {
-    position: absolute;
+    /* position: absolute;
     left: 22%;
-    top: 62%;
-    max-width: 283px;
+    top: 62%; */
+    max-width: 10%;
     width: 100%;
     height: auto;
     z-index: 2;
+    margin-top: 15%;
 }
 
 .arrow_top {
-    background: url('../img/top_dotted_line_gray_with_arrow.png') center center/cover no-repeat;
+    background: url('../img/top_dotted_line_gray_with_arrow.png');
     /* width: 100%; */
     height: 95px;
+    background-position: 43%;
     /* position: absolute;
     left: 22%;
     top: 62%;
@@ -625,39 +641,43 @@ nav span {
 }
 
 .arrow_bottom_box {
-    position: absolute;
+    /* position: absolute;
     left: 53.5%;
-    top: 57%;
-    max-width: 283px;
+    top: 57%; */
+    max-width: 10%;
     width: 100%;
     height: 95px;
     z-index: 2;
+    margin-top: 12%;
 }
 
 .arrow_bottom {
-    background: url('../img/bottom_dotted_line_gray_with_arrow.png') center center/cover no-repeat;
-    position: absolute;
-    width: 283px;
+    background: url('../img/bottom_dotted_line_gray_with_arrow.png') no-repeat;
+    /* position: absolute; */
+    background-position: 55%;
+    /* width: 283px; */
     height: 95px;
     z-index: 2;
 }
 
 .sales_stages_card_wrapper .white_top {
-    background: url('../img/top_dotted_line_white_with_arrow.png') center center/cover no-repeat;
-    position: absolute;
+    background: url('../img/top_dotted_line_white_with_arrow.png') no-repeat;
+    background-position: 43%;
+    /* position: absolute; */
     /* left: 22%; */
-    top: 62%;
-    width: 283px;
+    /* top: 62%; */
+    /* width: 283px; */
     height: 95px;
     z-index: 2;
 }
 
 .sales_stages_card_wrapper .white_bottom {
-    background: url('../img/bottom_dotted_line_white_with_arrow.png') center center/cover no-repeat;
-    position: absolute;
+    background: url('../img/bottom_dotted_line_white_with_arrow.png') no-repeat;
+    background-position: 55%;
+    /* position: absolute; */
     /* left: 53.5%;
     top: 57%; */
-    width: 283px;
+    /* width: 283px; */
     height: 95px;
     z-index: 2;
 }
@@ -946,7 +966,7 @@ nav span {
     bottom: 50%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 0;
+    z-index: -1;
     transition: 0.5s all;
     transition-timing-function: linear
 }    
@@ -968,7 +988,7 @@ nav span {
     bottom: 50%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 0;
+    z-index: -1;
     transition: 0.5s all;
     transition-timing-function: linear
 }
@@ -996,14 +1016,6 @@ nav span {
 
 
 
-
-
-
-
-
-@media only screen and (max-width: 992px) {
-    
-}
 
 .roadmap .skull_lowest_image {
     display: block;
@@ -1223,20 +1235,62 @@ nav span {
 }
 
 @media (max-width: 1492px) {
+    .welcome_img_box {
+        margin-bottom: -15%;
+    }
+
     .nftnomics_img_box {
         bottom: -11%;
     }
 }
 
 @media (max-width: 1280px) {
+    /* .welcome_img_box {
+        margin-bottom: -15%;
+    } */
+
     .nftnomics_img_box {
-        bottom: -15%;
+        bottom: -10%;
+    }
+
+    .timeline ul li:nth-child(odd) {
+        padding-left: 20px;
+    }
+
+    .timeline ul li:nth-child(even) {
+        padding-right: 20px;
+    }
+
+    .timeline ul li:nth-child(odd) .connector {
+        left: -65px;
+    }
+
+    .timeline ul li:nth-child(even) .connector {
+        right: -65px;
     }
 }
 
 @media (max-width: 1180px) {
+    .text_box h1 {
+        font-size: 210px;
+    }
+
+    .welcome_img_box {
+        margin-bottom: -18%;
+    }
+    
     .nftnomics_img_box {
         bottom: -18%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .text_box h1 {
+        font-size: 180px;
+    }
+
+    .welcome_img_box {
+        margin-bottom: -24%;
     }
 }
 
@@ -1257,7 +1311,9 @@ nav span {
     }
 
     .welcome .text_box .welcome_title {
-        font-size: 1.5vw;
+        /* font-size: 1.5vw; */
+        font-size: 16px;
+        margin-top: 80px;
     }
 
     .welcome .text_box {
@@ -1265,11 +1321,13 @@ nav span {
     }
 
     .text_box h1 {
-        font-size: 14vw;
+        /* font-size: 14vw; */
+        font-size: 130px;
     }
 
     .text_box h2 {
-        font-size: 7vw;
+        /* font-size: 7vw; */
+        font-size: 69px;
         margin-top: 38px;
     }
 
@@ -1289,6 +1347,7 @@ nav span {
 
     .welcome_img_box {
         width: 60%;
+        margin-bottom: -18%;
     }
 
     .nftnomics_img_box {
@@ -1296,9 +1355,14 @@ nav span {
     }
 
     .sales_stages .card {
-        padding: 20px 20px 37px;
+        padding: 20px 16px 37px;
         /* max-width: 181px;
         max-height: 261px; */
+        max-height: 340px;
+    }
+
+    .card_img_box {
+        margin-bottom: 40px;
     }
 
     .sales_stages_card_wrapper h5 {
@@ -1313,6 +1377,18 @@ nav span {
         display: none;
     }
 
+    .timeline ul li:nth-child(2n+1) .timeline-content:after{
+        bottom: 100%;
+    }
+
+    .timeline ul li:nth-child(2n) .timeline-content:after{
+        bottom: 100%;
+    }
+
+    .timeline ul li:first-child .timeline-content:hover::after {
+        height: 36%;
+    }
+
     .round_box {
         top: 8%;
     }
@@ -1324,7 +1400,8 @@ nav span {
     }
 
     .card_img_box {
-        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-bottom: 40px;
     }
 }
 
@@ -1353,18 +1430,21 @@ nav span {
     }
 
     .welcome_img_box {
-        width: 80%;
+        width: 75%;
         margin-top: 20px;
         margin-left: 15%;
+        margin-bottom: 0;
+        align-self: center;
     }
 
     .story::before {
-        top: -100px;
+        top: -95px;
+        background-size: contain;
     }
 
     .nftnomics {
         margin-bottom: 0;
-        padding-bottom: 180px;
+        padding-bottom: 40px;
     }
 
     .nftnomics_img_box {
@@ -1376,6 +1456,10 @@ nav span {
         background: url(../img/nftnomics_character_small.png) no-repeat;
         margin: 0 auto;
         margin-top: 80px;
+    }
+
+    .sales_stages_img_box {
+        display: none;
     }
 
     .sales_stages_card_wrapper {
@@ -1394,7 +1478,11 @@ nav span {
     .sales_stages .card {
         margin-top: 70px;
         width: 100%;
-        height: 388px;
+        max-height: 388px;
+    }
+
+    .sales_stages .card:nth-child(3) {
+        transform: translateY(0);
     }
 
     .sales_stages .card h5, .sales_stages .card p {
@@ -1414,11 +1502,7 @@ nav span {
         margin-bottom: 60px;
     }
 
-    .arrow_top, .arrow_bottom {
-        display: none;
-    }
-
-    .sales_stages::after {
+    .arrow_top_box, .arrow_bottom_box {
         display: none;
     }
 
@@ -1428,12 +1512,24 @@ nav span {
         align-self: center;  
     }
 
-    .timeline ul li:nth-child(odd) {
+    /* .timeline ul li:nth-child(odd) {
         padding-right: 0;
     }
 
     .timeline ul li:nth-child(even) {
         padding-left: 0;
+    } */
+
+    .timeline ul li:nth-child(odd) {
+        padding-right: 20px;
+    }
+
+    .timeline ul li:nth-child(even) {
+        padding-left: 20px;
+    }
+
+    .timeline ul li:first-child .timeline-content:hover::after {
+        height: 60%;
     }
 
     .round_box {
@@ -1450,5 +1546,15 @@ nav span {
 
     .timeline-content {
         width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .story::before {
+        top: -70px;
+    }
+
+    .timeline ul li:first-child .timeline-content:hover::after {
+        height: 45%;
     }
 }
