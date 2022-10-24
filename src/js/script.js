@@ -80,3 +80,11 @@ timelineContents.forEach((content, index) => {
         roundsLg[index].classList.remove('round-lg_hovered');
     })    
 })
+
+const hamburger = document.querySelector('.hamburger'),
+      navLinks = document.querySelector('.nav-links'),
+      links = document.querySelectorAll('.nav-links li');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+});
