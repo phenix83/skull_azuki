@@ -45,13 +45,7 @@ cards.forEach((card, index) => {
 })
 
 
-// cards.addEventListener('click', function(e) {
-//     if (e.target.matches('.card')) {
-//         e.target.classList.toggle('active');
-//         let number = e.target.querySelector('.number');
-//         number.classList.toggle('number_active');
-//     }
-// });
+// Road Map
 
 const connectors = document.querySelectorAll('.connector'),
       connectorRounds = document.querySelectorAll('.connector_round'),
@@ -82,9 +76,68 @@ timelineContents.forEach((content, index) => {
 })
 
 const hamburger = document.querySelector('.hamburger'),
+      overlay = document.querySelector('.overlay-nav'),
+      lines = document.querySelectorAll('.line'),
       navLinks = document.querySelector('.nav-links'),
       links = document.querySelectorAll('.nav-links li');
 
+
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
+    if (navLinks.classList.contains('open')) {
+        navLinks.classList.remove('open');
+        overlay.style.display = 'none';
+        lines.forEach(line => {
+            line.classList.remove('line_active');
+        });
+    } else {
+        navLinks.classList.add('open');
+        overlay.style.display = 'block';
+        lines.forEach(line => {
+            line.classList.add('line_active');
+        });
+    }
+    links.forEach(link => {
+        link.classList.add('shown');
+    });
 });
+
+overlay.addEventListener('click', () => {
+    overlay.style.display = 'none';
+    navLinks.classList.remove('open');
+    lines.forEach(line => {
+        line.classList.remove('line_active');
+    });
+    navLinks.classList.remove('open');
+})
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        overlay.style.display = 'none';
+        navLinks.classList.remove('open');
+        lines.forEach(line => {
+            line.classList.remove('line_active');
+        });
+        navLinks.classList.remove('open');
+    })    
+});
+
+function BackToTop() {
+    let button = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset >= 1000) {
+            button.style.display = 'block';
+        } else {
+            button.style.display = 'none';
+        }
+    });
+
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}
+
+BackToTop();
