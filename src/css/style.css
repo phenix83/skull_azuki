@@ -121,7 +121,6 @@ nav li span {
 
 .welcome .text_box .welcome_title {
     font-weight: 700;
-    /* font-size: 1.1vw; */
     font-size: 20px;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -132,7 +131,6 @@ nav li span {
 .text_box h1 {
     font-family: 'Rhinos rocks';
     font-weight: 500;
-    /* font-size: 12vw; */
     font-size: 227px;
     letter-spacing: 14px;
     text-transform: lowercase;
@@ -143,7 +141,6 @@ nav li span {
 .text_box h2 {
     font-family: 'Dry Brush';
     font-weight: 400;
-    /* font-size: 5vw; */
     font-size: 89px;
     color: #FFFFFF;
 }
@@ -263,11 +260,7 @@ nav li span {
 }
 
 .story .story_text {
-    /* max-width: 684px; */
     margin-top: 50px;
-    /* position: absolute;
-    top: 180px;
-    left: 536px; */
     font-weight: 450;
     font-size: 16px;
     line-height: 26px;
@@ -426,10 +419,8 @@ nav li span {
 .sales_stages_title {
     font-weight: 900;
     font-size: 65px;
-    line-height: 75px;
-        
+    line-height: 75px;        
     text-align: center;
-
     color: #FFFFFF;
     padding-top: 60px;
 }
@@ -482,10 +473,7 @@ nav li span {
 .sales_stages .card {
     max-width: 268px;
     width: 24%;
-    /* height: 388px; */
     max-height: 388px;
-    /* height: 100%; */
-    /* min-height: 388px; */
     padding: 25px 16px 56px;
     background: #434b57;
     box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.1);
@@ -717,8 +705,6 @@ nav li span {
     padding: 0;
     margin: 0;
     width: 100%;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 .timeline ul li {
@@ -836,7 +822,6 @@ nav li span {
 }
 
 .timeline-content {
-    /* margin: 0px calc(50% + 64px) 0px 0px; */
     width: 50%;
     padding: 42px 27px;
     border-radius: 28px;
@@ -1167,10 +1152,6 @@ nav li span {
 }
 
 @media (max-width: 1280px) {
-    /* .welcome_img_box {
-        margin-bottom: -15%;
-    } */
-
     .nftnomics_img_box {
         bottom: -10%;
     }
@@ -1225,14 +1206,7 @@ nav li span {
 }
 
 @media (max-width: 992px) {
-
-    /* .welcome .main_carachter {
-        max-width: 50%;
-    } */
-
     .navbar-brand {
-        /* height: 70px;
-        width: auto; */
         max-width: 180px;
     }
 
@@ -1245,7 +1219,6 @@ nav li span {
     }
 
     .welcome .text_box .welcome_title {
-        /* font-size: 1.5vw; */
         font-size: 16px;
         margin-top: 80px;
     }
@@ -1255,12 +1228,10 @@ nav li span {
     }
 
     .text_box h1 {
-        /* font-size: 14vw; */
         font-size: 130px;
     }
 
     .text_box h2 {
-        /* font-size: 7vw; */
         font-size: 69px;
         margin-top: 38px;
     }
@@ -1310,8 +1281,6 @@ nav li span {
 
     .sales_stages .card {
         padding: 20px 16px 37px;
-        /* max-width: 181px;
-        max-height: 261px; */
         max-height: 340px;
     }
 
@@ -1360,7 +1329,6 @@ nav li span {
 }
 
 @media (max-width: 768px) {
-
     .overlay-nav {
         display: none;
         position: fixed;
@@ -1426,14 +1394,8 @@ nav li span {
         padding-left: 0;
         transform: translateX(-100%);
         visibility: hidden;
-        /* opacity: 0; */
         transition: all 0.6s ease-out;
         z-index: 10;
-    }
-
-    .nav-links li {
-        /* display: contents; */
-        /* opacity: 0; */
     }
 
     .nav-links li:last-child {
@@ -1488,10 +1450,6 @@ nav li span {
         margin-top: 20px;
     }
 
-    .text_box h1 {
-        /* font-size: 130px; */
-    }
-
     .welcome_img_box {
         width: 75%;
         margin-top: 20px;
@@ -1502,7 +1460,6 @@ nav li span {
 
     .story::before {
         top: -95px;
-        /* background-size: contain; */
     }
 
     .story .story_wrapper {
