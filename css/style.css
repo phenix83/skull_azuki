@@ -1587,6 +1587,8 @@ nav li span {
     }
 }
 
+/* @media (max-width: 410px) */
+
 @media (max-width: 410px) {
     .timeline ul li:first-child .timeline-content:hover::after {
         height: 35%;
