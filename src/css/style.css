@@ -1309,7 +1309,7 @@ nav li span {
     }
 
     .timeline ul li:first-child .timeline-content:hover::after {
-        height: 36%;
+        height: 38%;
     }
 
     .round_box {
@@ -1587,8 +1587,8 @@ nav li span {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 410px) {
     .timeline ul li:first-child .timeline-content:hover::after {
-        height: 38%;
+        height: 35%;
     }
 }
