@@ -875,7 +875,7 @@ nav li span {
 }
 
 .timeline ul li:nth-child(2n) .timeline-content:hover::after {
-    height: calc(100% + 25%);
+    height: calc(100% + 10%);
 }
 
 .timeline ul li:last-child .timeline-content:hover::after {
@@ -1584,5 +1584,11 @@ nav li span {
 
     .timeline ul li:first-child .timeline-content:hover::after {
         height: 45%;
+    }
+}
+
+@media (max-width: 375px) {
+    .timeline ul li:first-child .timeline-content:hover::after {
+        height: 38%;
     }
 }
